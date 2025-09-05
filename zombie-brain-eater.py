@@ -20,7 +20,7 @@ snake_block = 20
 snake_speed = 10
 
 
-base_path = r"C:\Users\GURU\Documents\python\zombie.assets"
+base_path = os.path.dirname(os.path.abspath(__file__))
 
 zombie_img = pygame.image.load(os.path.join(base_path, "zombie.png"))
 zombie_img = pygame.transform.scale(zombie_img, (snake_block, snake_block))
@@ -118,3 +118,4 @@ def gameLoop():
     sys.exit()
 
 gameLoop()
+
